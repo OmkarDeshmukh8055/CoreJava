@@ -1,0 +1,32 @@
+package mix;
+
+
+public class AramStrongNUmber {
+
+	public static void main(String[] args) {
+
+		int num=1634;
+		int num1=num;
+		int temp=num;
+		int cnt=0;
+		int sumOfCube=0;
+		while(temp>0)
+		{
+			temp=temp/10;
+			cnt++;
+		}
+		while(num1>0)
+		{
+			num1=num1%10;
+			int d=(int)Math.pow(num1, cnt);
+			sumOfCube=sumOfCube+d;
+			num1=num1/10;
+		}
+		System.out.println(cnt);
+		if(sumOfCube==num)
+		System.out.println("yes");
+		else
+			System.out.println("no");
+	}
+
+}

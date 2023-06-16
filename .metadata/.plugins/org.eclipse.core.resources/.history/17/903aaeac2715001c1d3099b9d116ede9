@@ -1,0 +1,17 @@
+package ass1stday;
+
+public class procnvtday {
+
+	public static void main(String[] args) {
+	int days=373;
+	int years=days/365;
+	int week=(days%365)7;
+	int days=(days%365);
+	System.out.println(years+"years");
+	System.out.println();
+	System.out.println();
+	
+
+	}
+
+}

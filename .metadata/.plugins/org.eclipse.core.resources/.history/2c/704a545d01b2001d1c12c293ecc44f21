@@ -1,0 +1,15 @@
+package checkClasses;
+
+public class B extends A {
+	
+	@Override
+	 public void m(Integer a,Integer b)
+	 {
+		 System.out.println(2);
+	 }
+	 public static void main(String[] args) {
+		B b=new B();
+		b.m(1,2);
+	}
+
+}

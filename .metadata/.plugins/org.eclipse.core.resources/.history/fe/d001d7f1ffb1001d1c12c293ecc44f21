@@ -1,0 +1,10 @@
+package checkClasses;
+
+public class B extends A {
+	
+	 public void m(Integer a,Integer b)
+	 {
+		 
+	 }
+
+}

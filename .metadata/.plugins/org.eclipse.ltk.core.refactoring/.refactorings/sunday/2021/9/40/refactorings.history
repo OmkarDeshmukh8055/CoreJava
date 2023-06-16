@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sundaysep26starpattern.p20&apos; to &apos;p15&apos;&#x0D;&#x0A;- Original project: &apos;sunday&apos;&#x0D;&#x0A;- Original element: &apos;sundaysep26starpattern.p20&apos;&#x0D;&#x0A;- Renamed element: &apos;sundaysep26starpattern.p15&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;p20&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;sundaysep26starpattern{p20.java[p20" matchStrategy="1" name="p15" qualified="false" references="true" similarDeclarations="false" stamp="1632640378921" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,53 @@
+package practice;
+
+public class MultiplicationOfTwoArray {
+
+	public static void main(String[] args) {
+
+		int a[][]= {{1,2,3},
+					{4,5,6}};
+		
+		int b[][]= {{1,2},
+				{3,4},
+				{4,5}};
+		
+	int c[][]=new int[a.length][b[0].length];
+//		for (int i = 0; i < a.length; i++) 
+//		{
+//			for (int j = 0; j < b[i].length; j++)
+//			{
+//				for (int k = 0; k <b.length; k++)
+//				{
+//					c[i][j]=c[i][j]+a[i][k]*b[k][j];
+//				}
+//			}
+//		}
+		c=multi(a,b,c,0);
+		
+		for (int i = 0; i < c.length; i++)
+		{
+			for (int j = 0; j < c.length; j++)
+			{
+				System.out.print(c[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static int[][] multi(int[][] a, int[][] b,int c[][], int i) 
+	{
+		if(i<a.length)
+		{
+			for (int j = 0; j < b[i].length; j++)
+				{
+					for (int k = 0; k <b.length; k++)
+					{
+						c[i][j]=c[i][j]+a[i][k]*b[k][j];
+					}
+				}
+			return multi(a, b, c, i+1);
+		}
+		return c;
+	}
+
+}

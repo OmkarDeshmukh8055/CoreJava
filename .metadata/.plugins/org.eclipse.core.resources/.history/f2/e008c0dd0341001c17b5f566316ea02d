@@ -1,0 +1,14 @@
+package jeet;
+
+public class abcd {
+
+	public static void main(String[] args) {
+	
+		String a="abc";
+		String b="xyz";
+		String c=a+b;
+		System.out.println(c);
+
+	}
+
+}

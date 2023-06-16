@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;DoublyLinkedList&apos; to &apos;doublyLinkedList&apos;&#x0D;&#x0A;- Original project: &apos;zPracticeOnCollection&apos;&#x0D;&#x0A;- Original element: &apos;zPracticeOnCollection/src/DoublyLinkedList&apos;&#x0D;&#x0A;- Renamed element: &apos;zPracticeOnCollection/src/doublyLinkedList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;DoublyLinkedList&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;DoublyLinkedList" name="doublyLinkedList" qualified="false" references="true" stamp="1640866183207" textual="false" version="1.0"/>
+</session>

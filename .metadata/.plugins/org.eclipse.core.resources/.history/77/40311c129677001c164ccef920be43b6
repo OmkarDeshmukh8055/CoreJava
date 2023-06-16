@@ -1,0 +1,33 @@
+package mix;
+
+import java.util.Scanner;
+
+public class MultiPlicationOf_2_Array {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("A[] Arrays Size");
+		int b=sc.nextInt();
+		int a[][]=new int[b][b];
+		
+		for (int i = 0; i < a.length; i++) 
+		{
+			for (int j = 0; j < a.length; j++) 
+			{
+				int ele=sc.nextInt();
+				a[i][j]=ele;
+			}
+		}
+		
+		for (int i = 0; i < a.length; i++) 
+		{
+			for (int j = 0; j < a.length; j++) 
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+	
+	}
+
+}

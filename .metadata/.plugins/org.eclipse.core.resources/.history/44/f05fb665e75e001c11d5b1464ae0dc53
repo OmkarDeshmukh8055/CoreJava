@@ -1,0 +1,22 @@
+package practice;
+
+public class copyArray {
+
+	public static void main(String[] args) {
+
+		char ca[]= {'o','m','k','a','r'};
+		char caC[]=new char[ca.length];
+		caC=copy(ca,caC,0);
+	}
+
+	private static char[] copy(char[] ca, char[] caC, int i)
+	{
+		if(i<caC.length)
+		{
+			caC[i]=ca[i];
+		return	copy(ca, caC, i+1);
+		}
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+package checkClasses;
+
+public class B extends A {
+	
+	
+	 public void m(int a,int b)
+	 {
+		 System.out.println(2);
+	 }
+	 public static void main(String[] args) {
+		B b=new B();
+		b.m(1,2);
+	}
+
+}

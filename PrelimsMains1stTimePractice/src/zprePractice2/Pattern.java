@@ -1,0 +1,21 @@
+package zprePractice2;
+
+public class Pattern {
+
+	public static void main(String[] args)
+	{
+		for (int i = 0; i <11; i=i+2) 
+		{
+			for (int j = 0; j <11; j++) 
+			{
+				if(j-i<=0)
+					if((j*2==i))
+						System.out.print(" ");
+					else
+					System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}

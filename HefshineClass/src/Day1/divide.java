@@ -1,0 +1,13 @@
+package Day1;
+
+public class divide {
+
+	public static void main(String[] args) {
+		float a=2.2f;
+		double b=1.2;
+		double c=a/b;
+		System.out.println("div of two number="+c);
+
+	}
+
+}

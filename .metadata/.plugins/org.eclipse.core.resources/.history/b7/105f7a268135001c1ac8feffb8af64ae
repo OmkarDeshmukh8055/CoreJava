@@ -1,0 +1,12 @@
+package ExceptionHandlingOct25;
+
+public class throwsExceptionKeyaWord {
+
+	public static void main(String[] args) throws Exception{
+
+System.out.println("hi");
+ Thread.sleep(1000);
+System.out.println("hello");
+	}
+
+}

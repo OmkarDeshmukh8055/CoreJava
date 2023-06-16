@@ -1,0 +1,11 @@
+package DeadLock;
+
+public class Class1 {
+	
+	int i=0;	
+	public synchronized void incI()
+	{
+		i=i+1;
+	}
+
+}

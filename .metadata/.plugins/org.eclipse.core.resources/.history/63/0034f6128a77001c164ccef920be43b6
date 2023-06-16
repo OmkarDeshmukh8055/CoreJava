@@ -1,0 +1,29 @@
+package mix;
+
+public class Student implements Comparable<Student>{
+
+	int roll;
+	int marks;
+	String name;
+	Student(int roll,int marks,String name)
+	{
+		this.roll=roll;
+		this.marks=marks;
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Student [roll=" + roll + ", marks=" + marks + ", name=" + name + "]";
+	}
+	@Override
+	public int compareTo(Student s1) 
+	{
+		if(s1.marks<marks)
+			return -1;
+		else if(s1.marks>marks)
+			return 1;
+		else
+		return 0;
+	}
+	
+}

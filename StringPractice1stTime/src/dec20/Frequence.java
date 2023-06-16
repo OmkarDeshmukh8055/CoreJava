@@ -1,0 +1,66 @@
+package dec20;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Frequence {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+	//	String s=sc.nextLine();
+		String s="aaabbbbcc";
+		String s1="";
+		for (int i = 0; i < s.length(); i++) 
+		{	
+			int cnt=0;
+			for (int j = i+1; j < s.length(); j++)
+			{
+				if(s.charAt(i)==s.charAt(j))
+				{
+					cnt++;
+					break;
+				}		
+			}
+			if(cnt==0)
+				s1=s1+s.charAt(i);
+		}
+		int a[]=new int [s1.length()];
+		
+		for (int i = 0; i < s1.length(); i++)
+		{	int count=0;
+			for (int j = 0; j < s.length(); j++) 
+			{
+				if(s1.charAt(i)==s.charAt(j))
+					count++;
+			}
+			a[i]=count;
+		}
+		
+		int i=0;
+		char []ch=s1.toCharArray();
+		while(i<a.length)
+		{
+			int j=i+1;
+			while(j<a.length)
+			{
+				if(a[i]>a[j])
+				{
+					int temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+					
+					char temp1=ch[i];
+					ch[i]=ch[j];
+					ch[j]=temp1;
+				}
+				j++;
+			}
+			i++;
+		}
+		 s1=new String(ch);
+		System.out.println(s1);
+		System.out.println(Arrays.toString(a));
+	}
+
+}

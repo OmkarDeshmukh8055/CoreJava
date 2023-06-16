@@ -1,0 +1,19 @@
+package mySql;
+
+import java.sql.*;
+
+public class MySQlCommand {
+
+	public static void main(String[] args) throws SQLException {	
+		
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc18223","root","root");
+		
+		Statement stmt=con.createStatement();
+		if(con.isClosed())
+		{
+		System.out.println(1);
+		}else
+			System.out.println(1);
+	}
+
+}

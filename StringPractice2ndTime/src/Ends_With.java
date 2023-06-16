@@ -1,0 +1,29 @@
+
+public class Ends_With {
+
+	public static void main(String[] args) {
+		String s1 = "abcd";
+
+		String s2 = "dc";
+		if(s2.length()>s1.length())
+			System.out.print(false);
+		else
+		{
+		int j = s1.length() - 1;
+		int c = 0;
+		for (int i = s2.length() -1; i >= 0; i--)
+		{
+			if (s1.charAt(j) != s2.charAt(i)) 
+			{
+				System.out.println("false");
+				c++;
+				break;
+			}
+			j--;
+		}
+		if(c==0)
+			System.out.println("true");
+		}
+	}
+
+}

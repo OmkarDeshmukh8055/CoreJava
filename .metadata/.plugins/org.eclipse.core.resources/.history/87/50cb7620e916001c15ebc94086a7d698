@@ -1,0 +1,23 @@
+package test216sep;
+
+public class q3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	int a=2021;
+	
+	if(a%400==0) {
+		System.out.println("leap year");
+		else
+			System.out.println("non leap year");
+	}
+	if(a%4==0) {
+		System.out.println("leap year");
+		else
+			System.out.println("non leap year");
+	}
+	
+	}
+
+}

@@ -1,0 +1,15 @@
+package ArrayQue;
+
+public 
+	 class Boxer1 
+	{
+    public static void main(String args[])
+    { 
+       String c = "Hello i love java";
+       boolean var;
+       var = c.startsWith("hello");
+       System.out.println(var);
+       int a[]=new int[5];
+       System.out.println(a);
+    }
+	}

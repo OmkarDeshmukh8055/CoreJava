@@ -1,0 +1,17 @@
+package pojo;
+import java.sql.*;
+public class FirstJDCBC {
+	
+public static void main(String[] args) {
+	
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			String url="jdbc.mysqlP://localhost:3306/";
+			Connection con=DriverManager.getConnection(url);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+}
+}

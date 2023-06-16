@@ -1,0 +1,64 @@
+package myLinkedLsitAgain;
+
+public class Implimentation<p> {
+
+	Node<p> root;
+	
+	public void add(p data)
+	{
+		Node<p> obj=new  Node<p>(data);
+		if(root==null)
+			root=obj;
+		else
+		{
+			Node<p> temp=root;
+			while(temp.next!=null)
+			{
+				temp=temp.next;
+			}
+			temp.next=obj;
+		}
+	}
+	
+	int size()
+	{
+		Node<p> temp=root;
+		int size=0;
+		while(temp!=null)
+		{
+			temp=temp.next;
+			size++;
+		}
+		return size;
+		
+	}
+	Object[] toArray()
+	{
+		Node temp=root;
+		Object [] a=new Object [size()];
+		int index=0;
+		while(temp!=null)
+		{
+			a[index++]=temp.data;
+			temp=temp.next;
+			
+		}
+		return a;
+		
+	}
+	public String mytoString()
+	{
+		Node temp=root;
+		String s="[";
+		
+		while(temp!=null)
+		{
+			s=s+temp.data+" ";
+			if(temp.next!=null)
+				s=s+", ";
+			temp=temp.next;
+		}
+		s=s+"]";
+		return s;
+	}
+}

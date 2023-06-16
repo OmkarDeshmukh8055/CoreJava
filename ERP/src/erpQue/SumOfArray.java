@@ -1,0 +1,26 @@
+package erpQue;
+
+public class SumOfArray {
+
+	public static void main(String[] args) {
+		int a[]= {1,9,3,5};
+		int sum=0;
+		
+		sum=addition(sum,a,0);
+		System.out.println("sum "+sum);
+		int avg=sum/a.length;
+		System.out.println("avg "+avg);
+		}
+
+	private static int addition(int sum, int[] a,int i) 
+	{
+		if (i< a.length)
+		{
+			sum=sum+a[i];
+			i++;
+			return addition(sum, a, i);
+		}
+				return sum;
+	}
+
+}

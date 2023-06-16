@@ -1,0 +1,18 @@
+package DeadLock;
+
+public class MyClass {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		Abcd abcd=new Abcd();
+		Thread1 t1=new Thread1(abcd);
+		Thread2 t2=new Thread2(abcd);
+		t1.start();
+		t2.start();
+		t1.join();
+		t2.join();
+		
+		System.out.println(abcd.i);
+
+	}
+}

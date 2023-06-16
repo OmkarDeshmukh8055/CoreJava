@@ -1,0 +1,14 @@
+package array;
+
+import java.util.Arrays;
+
+public class Q30Again {
+
+	public static void main(String[] args) {
+
+		int a[]= {1,1,1,1,1,2,2,3,4};
+		int b[]= {1,1,2,4};
+			
+	}
+
+}

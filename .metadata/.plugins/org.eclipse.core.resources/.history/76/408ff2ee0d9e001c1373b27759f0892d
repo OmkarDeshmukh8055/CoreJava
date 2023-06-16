@@ -1,0 +1,10 @@
+package Basic;
+
+public class hi {
+static int[] a;
+public static void main(String[] args) {
+	StringBuffer s= new StringBuffer("omkaf");
+	s.delete(0,2);
+	System.out.println(s);
+}
+}

@@ -1,0 +1,27 @@
+package myLinkedLsitAgain;
+
+public class Op {
+
+	public static void main(String[] args) {
+
+		Implimentation<Integer> myList=new Implimentation<>();
+		myList.add(10); 
+		myList.add(20); 
+		myList.add(30); 
+		myList.add(40); 
+		myList.add(50); 
+		myList.add(60); 
+		myList.add(70); 
+		myList.add(70); 
+		myList.add(80); 
+		myList.AddWithIndex(0, 80);
+		System.out.println(myList.indexOf(20));
+		//System.out.println(myList.get(6));
+//		myList.remove(3);
+//		  Object[] ar=myList.toArray(); for (int i = 0; i < ar.length; i++) {
+//		 System.out.print(ar[i]+" "); } System.out.println();
+		System.out.println(myList.mytoString());
+		System.out.println(myList.lastIndexOf(70));
+	}
+
+}

@@ -1,0 +1,18 @@
+package practice;
+
+public class stack {
+
+	static int a[]=new int[5];
+	static int index=0;
+	public static void push(int num)
+	{
+		if(index<a.length)
+		{
+			a[index++]=num;
+		}
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

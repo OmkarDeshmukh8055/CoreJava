@@ -1,0 +1,46 @@
+package practice;
+
+public class SaddlePoint {
+
+	public static void main(String[] args) {
+
+		int a[][]= {{6, 3 ,1},
+			         {9 ,7 ,8},
+			          {2, 4,5}};
+		int counter=0;
+		for (int i = 0; i < a.length; i++)
+		{
+			for (int j = 0; j < a.length; j++)
+			{
+				int min=Integer.MAX_VALUE;	
+				int cnt=0;
+				for (int k = 0; k < a.length; k++)
+				{
+					if(a[i][k]<a[i][j])
+					{
+						min=a[i][k];
+						cnt++;
+					}
+				}
+				int max=Integer.MIN_VALUE;
+				int count=0;
+				for (int k = 0; k < a.length; k++)
+				{
+					if(a[k][j]>a[i][j])
+					{
+						max=a[k][j];
+					count++;
+					}
+				}
+				if(count==cnt)
+				{
+					System.out.println(a[i][j]);
+					counter++;
+				}
+			}
+			
+		}
+
+	}
+
+}

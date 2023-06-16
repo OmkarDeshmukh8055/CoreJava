@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;ComparableImplimentation&apos; to &apos;zCollectionCompratorAndCom/src/ComparableImplimentation&apos;&#x0D;&#x0A;- Original project: &apos;zCollectionCompratorAndCom&apos;&#x0D;&#x0A;- Destination element: &apos;zCollectionCompratorAndCom/src/ComparableImplimentation&apos;&#x0D;&#x0A;- Original element: &apos;zCollectionCompratorAndCom/src/ComparableImplimentation&apos;" description="Copy package" destination="/src&lt;ComparableImplimentation" element1="/src&lt;ComparableImplimentation" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1641813642590" version="1.0"/>
+</session>

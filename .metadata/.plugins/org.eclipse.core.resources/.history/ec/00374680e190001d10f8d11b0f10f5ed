@@ -1,0 +1,17 @@
+package com.springcore.autowire;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class Emp {
+	 private Address address;
+	 
+	public Emp() {
+		super();
+
+		
+	}
+
+}

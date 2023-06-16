@@ -1,0 +1,17 @@
+
+public class Merge_Array2 {
+
+	public static void main(String[] args) {
+		int a[] = {11,22,33,44};
+		int b[] = {55,66,77,88,99};
+		int index=0;
+		int c[]=new int[a.length+b.length];
+		for (int i = 0; i < a.length; i++)
+			c[index++]=a[i];
+		for (int i = 0; i < b.length; i++)
+			c[index++]=b[i];
+		for (int i = 0; i < c.length; i++) 
+			System.out.println(c[i]);
+	}
+
+}

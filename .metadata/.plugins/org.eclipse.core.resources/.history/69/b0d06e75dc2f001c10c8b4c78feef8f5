@@ -1,0 +1,17 @@
+package Assignment;
+
+public class spattern4 {
+
+	public static void main(String[] args)
+	{
+        loopi(0);
+	}
+
+	private static void loopi(int i) 
+	{
+		if(i<5)
+			
+			
+	}
+
+}

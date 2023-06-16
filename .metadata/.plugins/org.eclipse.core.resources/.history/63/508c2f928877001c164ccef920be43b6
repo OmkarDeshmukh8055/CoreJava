@@ -1,0 +1,21 @@
+package mix;
+
+public class StudentOp {
+
+	public static void main(String[] args) {
+		Student s1=new Student(1, 35, "abhi");
+		Student s2=new Student(2, 90, "sachi");
+		Student s3=new Student(3, 77, "pooja");
+		Student s4=new Student(4, 90, "vaishnavi");
+		Student s5=new Student(5, 76, "pavan");
+		Student s6=new Student(6, 85, "akash");
+		Student s7=new Student(7, 95, "sagar");
+		Student s8=new Student(8, 96, "swapi");
+		Student s9=new Student(9, 75, "nana");
+		Student s10=new Student(10, 36, "om");
+		
+		System.out.println(s1.toString());
+
+	}
+
+}

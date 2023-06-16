@@ -1,0 +1,33 @@
+package Basic;
+
+public class Apattern30 {
+
+	public static void main(String[] args) {
+		printi(0,5);
+	}
+
+	private static void printi(int i,int cnt) 
+	{
+		if (i < 12) 
+		{
+			printJ(i, 0,cnt);
+			System.out.println();
+			printi(i + 1,cnt-1);
+		}
+	}
+
+	private static void printJ(int i, int j,int cnt)
+	{
+		int c1=cnt;
+		if (j <7) 
+		{
+			if (j+i<=5 ||j-i<-4)
+				System.out.print((char)(c1-+65));
+			else
+				System.out.print(" ");
+			c1--;
+			printJ(i, j + 1,cnt);
+		}
+	}
+
+}

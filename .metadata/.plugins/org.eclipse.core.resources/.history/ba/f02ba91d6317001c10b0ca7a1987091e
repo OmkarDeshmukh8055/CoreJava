@@ -1,0 +1,21 @@
+package day4;
+
+public class hwq10 {
+	public static void main(String[] args) {
+		
+	
+	int guess =100;
+	int ans =12;
+	int sysans =22;
+	
+if(guess<ans)
+{
+	System.out.println("low");}
+	else if(guess>sysans) {
+		System.out.println("high");
+}
+	else {
+		System.out.println("corret");
+	}
+}
+}

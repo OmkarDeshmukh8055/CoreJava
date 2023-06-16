@@ -1,0 +1,10 @@
+package treenov9;
+
+public class myTree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

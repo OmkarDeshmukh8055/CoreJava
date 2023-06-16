@@ -1,0 +1,30 @@
+package practice;
+
+public class Leaderelement {
+
+	public static void main(String[] args) {
+
+		int a[]= {1,4,5,12,11,1,4,1};
+		
+		
+		leadeElement(a,0,0);
+	}
+
+	private static void leadeElement(int[] a, int i, int j)
+	{
+		if(i<a.length)
+		{
+			int cnt=0;
+			for ( j = i+1; j < a.length; j++) 
+			{
+				if(a[i]<a[j])
+					cnt++;
+			}
+			if(cnt==0)
+				System.out.println(a[i]);
+	
+			leadeElement(a, i+1, j);
+		}
+	}
+
+}

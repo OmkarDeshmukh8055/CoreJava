@@ -1,0 +1,17 @@
+package zprePractice2;
+
+public class Uniqe_Possibilities {
+
+	public static void main(String[] args) {
+		int num=123;
+		int num1=num;
+		int s1=0;
+		while(num1>0)
+		{
+			s1=s1+num1%10;
+			num1=num1/10;
+		}
+		System.out.println(s1);
+	}
+
+}

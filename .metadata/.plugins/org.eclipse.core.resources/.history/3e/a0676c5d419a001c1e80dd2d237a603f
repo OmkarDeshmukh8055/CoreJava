@@ -1,0 +1,14 @@
+package ArrayQue;
+
+public 
+	 class Boxer1 
+	{
+    public static void main(String args[])
+    { 
+    	StringBuffer s=new StringBuffer("om");
+    	StringBuffer s1=new StringBuffer(" kar");
+    	s.append(s1);
+    	System.out.println(s);
+
+    	}
+	}

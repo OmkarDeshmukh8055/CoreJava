@@ -1,0 +1,57 @@
+package array;
+
+public class Q30Again {
+
+	public static void main(String[] args) {
+
+		int a[]= {1,1,1,1,1,2,2,3,4};
+		int b[]= {1,1,2,4};
+			
+		int cnt=0;																				
+		for (int i = 0; i < a.length; i++) 
+		{
+				int count=0;
+			for (int j = 0; j < b.length; j++)
+			{
+				if(a[i]==b[j])
+					count++;
+			}
+			int x=0;
+			for (int j = 0; j < i; j++) 
+			{
+				if(a[i]==a[j])
+					x++;
+			}
+			if(count==0)
+				cnt++;
+			if(x>=2)
+				cnt++;
+		}
+		System.out.println(cnt);
+		int[] n=new int [cnt];
+		
+		int index=0;
+		
+		for (int i = 0; i < a.length; i++) 
+		{
+				int count=0;
+			for (int j = 0; j < b.length; j++)
+			{
+				if(a[i]==b[j])
+					count++;
+			}
+			int x=0;
+			for (int j = 0; j < a.length; j++) 
+			{
+				if(a[i]==a[j])
+					x++;
+			}
+			if(count==0)
+				n[index++]=a[i];
+			if(x>=2)
+				n[index++]=a[i];
+		}
+	System.out.println(cnt);
+	}
+
+}

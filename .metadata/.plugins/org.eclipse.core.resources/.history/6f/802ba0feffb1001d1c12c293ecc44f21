@@ -1,0 +1,8 @@
+package checkClasses;
+
+public class A {
+	 public void m(int a,int b)
+	 {
+		 
+	 }
+}

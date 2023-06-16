@@ -1,0 +1,13 @@
+package DeadLock;
+
+public class Class1 {
+	
+	public synchronized void c1m1()
+	{
+		System.out.println("c1m1");
+	}
+	public synchronized void c1m2()
+	{
+		System.out.println("c1m2");
+	}
+}

@@ -1,0 +1,117 @@
+package array;
+
+import java.util.Arrays;
+
+public class Harshada {
+	static int a[]= {1,1,1,1,1,2,2,4,3};
+	static int b[]= {1,2,4};
+	public static void main(String[] args) {
+
+		
+		
+		int cnt=0;
+		for (int i = 0; i < a.length; i++)
+		{	
+			boolean dup=true;
+			
+			for (int j = 0; j < b.length; j++)
+			{
+				if(a[i]==b[j])
+				{
+					dup=false;
+					break;
+				}
+			}
+			int count=0;
+			for (int j = 0; j <i; j++)
+			{
+				if(a[j]==a[i])
+				{
+					count++;
+				}
+			}
+			if(dup|| count>=2)
+			{
+				cnt++;
+			}
+		}
+		System.out.println(cnt);
+		
+		int ia[]=new int [cnt];
+		int index=0;
+		int count=0;
+		for (int i = 0; i < a.length; i++)
+		{	
+			boolean dup=true;
+			
+			for (int j = 0; j < b.length; j++)
+			{
+				if(a[i]==b[j])
+				{
+					dup=false;
+					break;
+				}
+			}
+			int counter=0;
+			for (int j = 0; j <i; j++)
+			{
+				if(a[j]==a[i])
+				{
+					counter++;
+				}
+			}
+			if(dup|| counter>=2)
+			{
+				ia[index++]=a[i];
+			}
+		}
+		//System.out.println(Arrays.toString(ia));
+		int COUNTR=0;
+		loopI(0,COUNTR);
+
+		}
+	private static void loopI(int i,int COUNTR) {
+		if(i<a.length)
+		{
+			boolean dup=true;
+			dup=loopJ(i,0,dup);
+			int count=0;
+			loopJ1(count,i,0);
+			
+			if(dup||count>=2)
+			{
+				COUNTR++;
+			}
+			loopI(i+1,COUNTR);
+
+		}
+		
+	}
+	private static void loopJ1(int count, int i, int j)
+	{
+		if(j<i)
+		{
+			if(a[i]==a[j])
+			{
+				count++;
+			}
+		}
+		
+	}
+	private static boolean loopJ(int i, int j, boolean dup) 
+	{
+		if(j<b.length)
+		{
+			if(a[i]==b[j])
+			{
+				dup=false;
+				return dup;
+			}
+			return loopJ(i,j+1,dup);
+		}
+	else
+		return true;
+	}
+	
+
+}

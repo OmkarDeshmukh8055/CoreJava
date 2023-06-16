@@ -1,0 +1,16 @@
+package day2ndoctARRY;
+
+public class avrage2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] b= {12,32,54};
+int sum=0;
+for (int i = 0; i < b.length; i++) {
+	sum=sum+b[i];
+	
+}System.out.println(sum);
+System.out.println(sum/3);
+	}
+
+}

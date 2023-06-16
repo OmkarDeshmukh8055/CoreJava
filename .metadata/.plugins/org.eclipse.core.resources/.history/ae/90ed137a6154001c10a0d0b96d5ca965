@@ -1,0 +1,73 @@
+package array;
+
+import java.util.Arrays;
+
+public class Q30Again {
+
+	public static void main(String[] args) {
+
+		int a[] = { 1, 1, 1, 1, 1, 2, 2, 3, 4 };
+		int b[] = { 1, 1, 2, 4 };
+
+		int rank = 0;
+		for (int i = 0; i < a.length; i++) 
+		{
+			int count = 0;
+			for (int j = 0; j < b.length; j++) 
+			{
+				if (a[i] == b[j]) 
+				{
+					count++;
+					break;
+				}
+			}
+			int c = 0;
+			for (int j = 0; j < i; j++)
+			{
+				if (a[i] == a[j]) 
+				{
+					c++;
+				}
+			}
+
+				if (count==0)
+					rank++;
+				if (c >= 2)
+					rank++;
+			}
+		
+		//System.out.println("duplicate "+rank);
+		int c[]=new int[a.length-rank];
+		
+		int index= 0;
+		for (int i = 0; i < a.length; i++) 
+		{
+			int count = 0;
+			for (int j = 0; j < b.length; j++) 
+			{
+				if (a[i] == b[j]) 
+				{
+					count++;
+					break;
+				}
+			}
+			int c1 = 0;
+			for (int j = 0; j < i; j++)
+			{
+				if ( a[j]==a[i]) 
+				{
+					c1++;
+				}
+			}
+
+				if (count==0)
+					c[index++]=a[i];
+				if (c1 >= 2)
+					c[index++]=a[i];
+			}
+		
+		System.out.println(Arrays.toString(c));
+
+	}
+
+}

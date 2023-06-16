@@ -1,0 +1,27 @@
+package day4;
+
+public class hwq13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+int x=-4;
+int y=0;
+if(x>=0 && y>=0) {
+	System.out.println("1 qua");
+}
+	else if(x<0 && y>=0) {
+		System.out.println("2 qua");
+	}
+	else if(x<0 && y<0) {
+		System.out.println("3 qua");
+		
+	}
+	else if(x>=0 && y<0) {
+System.out.println("4 qua");
+	}
+	else
+		System.out.println("origin");
+	}
+
+}

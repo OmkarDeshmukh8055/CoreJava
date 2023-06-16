@@ -1,0 +1,36 @@
+package practice;
+
+public class ReverseArray {
+
+	public static void main(String[] args) {
+
+		int a[]= {1,2,3,4,5};
+		int j=a.length-1;
+		a=reverse(a,j,0);
+		print(a,0);
+	}
+
+	private static void print(int[] a, int i)
+	{
+			if(i<a.length)
+			{
+				System.out.println(a[i]);
+				print(a,i+1);
+			}
+		
+	}
+
+	private static int[] reverse(int[] a, int j, int i)
+	{	
+		if(i<a.length/2)
+		{
+			int temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+			j--;
+		}
+		
+		return a;
+	}
+
+}

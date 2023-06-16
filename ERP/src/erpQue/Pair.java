@@ -1,0 +1,28 @@
+package erpQue;
+
+public class Pair {
+
+	public static void main(String[] args) {
+		int a[]= {11,22,33,44,55};
+		
+		pair(a,0);
+	}
+	private static void pair(int[] a, int i) 
+	{
+		if(i<a.length)
+		{
+			Jloop(a,i,0);
+			pair(a, i+1);
+		}
+	}
+
+	private static void Jloop(int[] a, int i, int j) {
+	if(j<a.length)
+	{
+		System.out.println(a[i]+" "+a[j]);	
+		Jloop(a, i, j+1);
+	}
+		
+	}
+
+}

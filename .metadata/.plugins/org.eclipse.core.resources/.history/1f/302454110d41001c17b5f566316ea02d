@@ -1,0 +1,14 @@
+package jeet;
+
+public class si {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ int p=20000;
+ int n=2;
+ int r=13;
+ int si=(p*n*r)/100;
+ System.out.println(si);
+	}
+
+}

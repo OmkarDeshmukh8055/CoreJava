@@ -1,0 +1,37 @@
+package mix;
+
+import java.util.Scanner;
+
+public class ArramStrong {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int num=5;//sc.nextInt();
+		int num1=num;
+		int num2=num;
+		
+		int cnt=0;
+		while(num1>0)
+		{
+			num1=num1/10;
+			cnt++;
+		}
+		
+		int sum=0;
+		while(num2>0)
+		{
+			int r=num2%10;
+			int n=(int)Math.pow(r, cnt);
+			sum=sum+n;
+			num2=num2/10;
+		}
+		if(num==sum)
+			System.out.println("Aram Strong number");
+		else
+			System.out.println("not");
+
+
+	}
+
+}

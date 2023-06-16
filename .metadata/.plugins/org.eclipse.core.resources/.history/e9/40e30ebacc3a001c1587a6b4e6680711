@@ -1,0 +1,36 @@
+package DoublyLinkedListNov1stEx1;
+
+public class mainMethod {
+
+	public static void main(String[] args) {
+
+ myLinkedList<Integer> list=new myLinkedList<>();
+ 
+list.add(10);
+list.add(20);
+list.add(30);
+list.add(40);
+list.add(50);
+list.add(60);
+
+System.out.println("....forword print.....");
+list.forWordPrint();
+
+System.out.println("....backWord print.....");
+list.backWordPrint();
+
+System.out.println("addwithIndex method");
+list.addwithIndex(3, 101);
+list.forWordPrint();
+
+System.out.println("set method");
+list.set(1, 100);
+list.forWordPrint();
+
+System.out.println("isEmpty method");
+list.isEmpty();
+
+
+	}
+
+}

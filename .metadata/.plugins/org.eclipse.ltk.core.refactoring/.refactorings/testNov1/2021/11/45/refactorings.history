@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;testNov1.myTreeMap&apos; to &apos;myTree&apos;&#x0D;&#x0A;- Original project: &apos;testNov1&apos;&#x0D;&#x0A;- Original element: &apos;testNov1.myTreeMap&apos;&#x0D;&#x0A;- Renamed element: &apos;testNov1.myTree&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;myTreeMap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;testNov1{myTreeMap.java[myTreeMap" matchStrategy="1" name="myTree" qualified="false" references="true" similarDeclarations="false" stamp="1635870607479" textual="false" version="1.0"/>
+</session>

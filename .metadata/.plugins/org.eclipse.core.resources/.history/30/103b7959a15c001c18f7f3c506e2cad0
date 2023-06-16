@@ -1,0 +1,61 @@
+package array;
+
+import java.util.Arrays;
+
+public class c7re {
+		static 		int a[]= {1,2,2};
+		 static int cnt=0;
+
+		public static void main(String[] args)
+		{
+			for (int i = 0; i < a.length; i++)
+			{	
+				for (int j = i+1; j < a.length; j++)
+				{
+					if(a[i]==a[j])
+					{
+						cnt++;
+						break;
+					}
+				}
+			}
+			int b[]=new int [a.length-cnt];
+			int index=0;
+			for (int k = 0; k < a.length; k++)
+			{		
+				boolean noDup=true;
+				for (int j = k+1; j < a.length; j++)
+				{
+					if(a[j]==a[k])
+					{
+						noDup=false;
+						break;
+					}
+				}
+				if(noDup)
+				{
+					b[index++]=a[k];
+				}
+			}
+			a=b;
+		System.out.println(Arrays.toString(a));
+			
+			for (int l = 0; l < a.length; l++)
+			{
+				for (int j =0; j < a.length; j++) 
+				{	
+					System.out.println(a[l]+" "+a[j]);
+				}
+			}
+			loopI(0);
+	}
+
+		private static void loopI(int i)
+		{
+			if(i<a.length)
+			{
+				loopI(i+1);
+			}
+		}
+
+}

@@ -1,0 +1,24 @@
+package dublyLinkedListPractice;
+
+public class List {
+
+	public static void main(String[] args) {
+
+		MyList<Integer> list=new MyList<>();
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		list.add(40);
+		list.add(50);
+		list.add(60);
+
+		list.remove(0);
+		
+		list.addWithIndex(0, 10);
+		System.out.println(list.size());
+		list.forWord();
+		list.reverse();
+		//System.out.println(list.myToString());
+	}
+
+}

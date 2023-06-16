@@ -1,0 +1,135 @@
+package zHashmap;
+
+public class MyMap<k,v> 
+{	
+	Node a[]=new Node[5];
+private	int size=0;
+	
+void add(k key, v value)
+{
+	int index =key.hashCode()% a.length;
+	Node temp=a[index];
+	if (temp==null)
+		a[index]=new Node(key,value);
+	
+	else
+	{ 
+		boolean shouldweAddNewObj=true;
+		
+			while(temp.next!=null)
+			{
+				if(temp.key==key)
+				{
+					temp.value=value;
+					shouldweAddNewObj=false;
+					break;
+				}
+				temp=temp.next;
+			}
+			if(shouldweAddNewObj)
+			{
+				if(temp.key==key)
+					temp.value=value;
+			}
+			else			
+			temp.next=new Node (key,value);
+		}
+}
+	
+	int size()
+	{
+		return size;
+	}
+	@Override
+	public String toString()
+	{
+		String s="[";
+		for (int i = 0; i < a.length; i++)
+		{
+			Node temp=a[i];
+			while(temp!=null)
+			{
+				s=s+temp.key+" "+temp.value+" ";
+				if(temp.next!=null)
+					s=s+",";
+				temp=temp.next;
+			}
+		}
+		s=s+"]";
+		return s;
+	}
+	boolean containsValue(v value)
+	{
+		for (int i = 0; i < a.length; i++)
+		{
+			Node temp=a[i];
+			while(temp!=null)
+			{
+				if(temp.value==value)
+					return true;
+				temp=temp.next;
+			}
+		}
+		return false;
+	}
+	boolean contains(k key)
+	{
+		int index=key.hashCode()%a.length;
+		Node temp=a[index];
+		if(a[index]==key)
+		{
+			return true;
+		}
+		while(temp!=null)
+		{
+			if(temp.key.equals(key))
+				return true;
+			temp=temp.next;
+		}
+		return false;
+	}
+	v get(k key)
+	{
+		int index=key.hashCode()%a.length;
+		Node temp=a[index];
+		while(temp!=null)
+		{
+			if(temp.key==key)
+				return(v) temp.value;
+			temp=temp.next;
+		}
+		return null;
+	}
+	void print()
+	{
+		
+		for (int i = 0; i < a.length; i++)
+		{
+			Node temp=a[i];
+			while(temp!=null)
+			{
+				System.out.println(temp.key+" "+temp.value);
+				temp=temp.next;
+			}
+		
+		}
+	}
+	public static void main(String[] args)
+	{
+		MyMap<Integer,String> map=new MyMap<>();
+		map.add(1, "pavan");
+		map.add(12, "sachin");
+		map.add(1, "omkar");
+		map.add(200, "h");
+		map.add(1, "rushi");
+		map.add(19, "hanumant");
+		map.add(11, "akash");
+		map.print();
+		System.out.println(map.contains(200));
+		//System.out.println(map.size);
+	//	System.out.println(map.containsValue("omkar"));
+		System.out.println(map.toString());
+
+	}
+
+}

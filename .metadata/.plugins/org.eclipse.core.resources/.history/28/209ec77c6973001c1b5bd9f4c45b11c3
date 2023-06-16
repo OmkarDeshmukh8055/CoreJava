@@ -1,0 +1,17 @@
+package zprePractice;
+
+public class Compound_Interest {
+
+	public static void main(String[] args) {
+		int p=2000;
+		int n=12;
+		int t=5;
+		double r=8/100;
+		
+		int b=n*t;
+	
+		double Compound_Interest=p*Math.pow(1+(r/n), n*t);
+		System.out.println(Compound_Interest);
+	}
+
+}

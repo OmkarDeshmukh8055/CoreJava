@@ -1,0 +1,28 @@
+package practice;
+
+public class stack {
+
+	static int a[]=new int[5];
+	static int index=0;
+	public static void push(int num)
+	{
+		if(index<a.length)
+		{
+			a[index++]=num;
+		}
+		else
+			System.out.println("stack is full");
+	}
+	public static void print()
+	{
+		for (int i = 0; i < a.length; i++)
+		{
+			System.out.println(a[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

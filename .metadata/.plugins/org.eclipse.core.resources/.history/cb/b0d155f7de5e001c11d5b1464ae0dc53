@@ -1,0 +1,32 @@
+package practice;
+
+public class containMethodArray {
+
+	public static void main(String[] args) {
+
+		int a[]= {1,2,3,4,5};
+		int num =3;
+		int count=0;
+		
+		count=search(a,count,num,0);
+		if(count==0)
+			System.out.println("not found");
+		else
+			System.out.println("found");
+	}
+
+	private static int search(int[] a, int count, int num, int i)
+	{
+		if(i<a.length)
+		{
+			if(a[i]==num)
+			{
+				count++;
+				return count;
+			}
+			return search(a, count, num, i+1);
+		}
+		return count;
+	}
+
+}

@@ -1,0 +1,58 @@
+package practice;
+
+import java.util.Arrays;
+public class harshada {
+	public static void main(String[] args)
+	{
+		 int a[]= {1,1,1,1,1,2,2,3,4};
+		 int b[]= {1,2,4};
+
+		for (int i = 0; i <b.length; i++)
+		{}
+		a=loopI(a,b,0);
+		System.out.println(Arrays.toString(a));
+	}
+
+	private static int[] loopI(int[] a, int[] b, int i)
+	{
+		if(i<b.length)
+		{
+			
+			int cnt=0;
+			cnt=loopJ(cnt,a,b,i,0);
+			if(cnt>2)
+				cnt=2;
+		 int c[]=new int[a.length-cnt];
+		 int index=0;
+		 cnt=0;
+		 for (int j = 0; j < a.length; j++)
+		 {
+			if(a[j]==b[i] && cnt<2)
+			{
+				cnt++;
+			}
+			else
+			{
+				c[index++]=a[j];
+			}
+		 }
+		 a=c;
+	return	loopI(a, b, i+1);
+		}
+		return a;
+	}
+
+	private static int loopJ(int cnt, int[] a, int[] b, int i, int j)
+	{
+		if(j<a.length)
+		{
+			if(a[j]==b[i])
+				cnt++;
+		return loopJ(cnt, a, b, i, j+1);
+		}
+		return cnt;
+	}
+
+	
+
+}

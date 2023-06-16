@@ -1,0 +1,33 @@
+package jeet;
+
+public class nmm {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  byte a=1;
+  System.out.println(a);
+  
+  short b=5;
+  System.out.println(b);
+
+  int c=3;
+  System.out.println(c);
+	
+  long d=2;
+  System.out.println(d);
+  
+  float e=4.3f;
+  
+  System.out.println(e);
+  
+  char g='a';
+  System.out.println(g);
+  
+  String i="acxx";
+  System.out.println(i);
+  
+  boolean t=true;
+  System.out.println(t); 
+	}
+
+}

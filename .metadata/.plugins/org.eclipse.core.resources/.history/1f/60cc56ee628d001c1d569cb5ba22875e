@@ -1,0 +1,33 @@
+
+public class Merge_Array2 {
+
+
+		//StartOfMainMethod
+		public static void main(String[] args) 
+		{
+			int[] a= 
+			{
+				3,2,4,6,5,6,8
+			}
+			;
+			myCode(a);
+		}
+		//EndOfMainMethod
+		private static void myCode(int[] a) 
+		{
+			//WriteCode Here
+			int t=a[a.length-1];
+			for(int i=0;i<a.length;i++)
+			{
+				a[i]=a[i+1];
+			}
+			a[0]=t;
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+	
+
+}

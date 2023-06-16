@@ -1,0 +1,26 @@
+package dublyLinkedList;
+
+public class op {
+
+	public static void main(String[] args) {
+
+		MyDublyLinkedList<Integer> list=new MyDublyLinkedList<>();
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		list.add(40);
+		list.add(20);
+		list.add(60);
+		
+		//list.remove(4);
+	//	list.addWithIndex(5, 5);
+//		list.set(10, 5);
+//		System.out.println(list.get(2));
+		list.forWord();
+//		System.out.println(list.indexOf(20));
+//
+//		System.out.println(list.lastIndexOf(10));
+		list.backWord();
+	}
+
+}

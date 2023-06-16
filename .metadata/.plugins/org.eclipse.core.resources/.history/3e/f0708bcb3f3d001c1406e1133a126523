@@ -1,0 +1,16 @@
+package treemapNov4;
+
+public class myclass {
+
+	public static void main(String[] args) {
+
+  myTreeMap map=new myTreeMap();
+  map.add(1, "one");
+  map.add(2, "two");
+  map.add(3, "three");
+  map.add(4, "four");
+  map.print();
+  
+	}
+
+}

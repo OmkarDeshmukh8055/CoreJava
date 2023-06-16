@@ -1,0 +1,91 @@
+package Sachin_DAda;
+
+public class Strictly_Inc {
+	
+		//StartOfMainMethod
+		public static void main(String[] args) 
+		{
+			int[] a= 
+			{
+				5, 1, 3, 6, 8, 2, 9, 0, 10
+			}
+			;
+			myCode(a);
+		}
+		//EndOfMainMethod
+		private static void myCode(int[] a) 	
+		{
+			//WriteCode Here
+			int inum=0,dnum=0,ic=0,dc=0;
+			if(a[0]>a[1])
+			{
+				inum=a[1];
+				dnum=a[0];
+				ic++;
+				dc++;
+			}
+			else if(a[0]<a[1])
+			{
+				inum=a[0];
+				dnum=a[1];
+				ic++;
+				dc++;
+			}
+			for(int i=2;i<a.length;i++)
+			{
+				if(a[i]>inum)
+				{
+					inum=a[i];
+					ic++;
+				}
+				else if(a[i]<dnum)
+				{
+					dc++;
+					dnum=a[i];
+				}
+				else
+				{
+					System.out.print(-1);
+					System.exit(0);
+				}
+			}
+			System.out.println(ic);
+			int []ia=new int [ic];
+			int [] da=new int[dc];
+			int ii=0,di=0;
+			ic=0;dc=0;
+			if(a[0]<a[1])
+			{
+				inum=a[0];
+				ia[ii++]=a[0];
+				da[di++]=a[1];
+			}
+			else
+			{
+				ia[ii++]=a[1];
+				inum=a[1];
+				da[di++]=a[0];
+			}
+			for(int i=2;i<a.length;i++)
+			{
+				if(a[i]>inum)
+				{
+					inum=a[i];
+					ia[ii++]=a[i];
+				}
+				else
+				da[di++]=a[i];
+			}
+			for(int i=0;i<ia.length;i++)
+			{
+				System.out.print(ia[i]+" ");
+			}
+			System.out.println();
+			for(int i=0;i<da.length;i++)
+			{
+				System.out.print(da[i]+" ");
+			}
+		}
+	}
+
+

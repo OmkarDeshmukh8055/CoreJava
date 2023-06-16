@@ -1,0 +1,14 @@
+package Day1;
+
+public class calculateint {
+
+	public static void main(String[] args) {
+		double p=10000.00;
+		int n=2;
+		int r=10;
+		double si=p*n*r/100;
+		System.out.println(si);
+
+	}
+
+}

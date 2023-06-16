@@ -1,0 +1,26 @@
+package arrayRecursion;
+
+public class FindMAx2 {
+
+	public static void main(String[] args) {
+
+int a[]= {1,2,3,4,5,9,7,8};
+
+int max=Integer.MIN_VALUE;
+   int result =loopi(a,0,max);
+   System.out.println(result);
+
+	}
+
+	private static int loopi(int[] a, int i,int max) {
+
+		if(i<a.length)
+		{
+			if(a[i]>max)
+				max=a[i];
+			return loopi(a, i+1, max);
+		}
+			return max;
+	}
+
+}

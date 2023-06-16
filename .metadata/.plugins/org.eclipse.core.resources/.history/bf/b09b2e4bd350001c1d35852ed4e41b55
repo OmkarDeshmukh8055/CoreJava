@@ -1,0 +1,10 @@
+package ArraysQuestions;
+
+public class insertionSorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
